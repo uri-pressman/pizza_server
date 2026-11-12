@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9C4"
+    tools:context=".MainActivity2">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btnOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="👋 Welcome "
+                android:textColor="#D32F2F"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="📏 Pick Your Pizza Size:"
+                android:textColor="#37474F"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Pizza Size Buttons (Fixed Alignment & Uniform Padding) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/bg_cartoon_button"
+                    android:text="👶 Small"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/bg_cartoon_button"
+                    android:text="🧑 Medium"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/bg_cartoon_button"
+                    android:text="🦖 Large"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="🧀 Stack Your Toppings ($1 each):"
+                android:textColor="#37474F"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Toppings Switches -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Switch android:id="@+id/switchOlives" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="🫒 Olives" android:textColor="#E65100" android:textSize="18sp" />
+                <Switch android:id="@+id/switchMushrooms" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="🍄 Mushrooms" android:textColor="#E65100" android:textSize="18sp" />
+                <Switch android:id="@+id/switchCorn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="🌽 Corn" android:textColor="#E65100" android:textSize="18sp" />
+                <Switch android:id="@+id/switchTomato" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="🍅 Tomato" android:textColor="#E65100" android:textSize="18sp" />
+                <Switch android:id="@+id/switchOnion" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="🧅 Onion" android:textColor="#E65100" android:textSize="18sp" />
+                <Switch android:id="@+id/switchPepperoni" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="🥩 Pepperoni" android:textColor="#E65100" android:textSize="18sp" />
+                <Switch android:id="@+id/switchAnchovy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="🐟 Anchovy" android:textColor="#E65100" android:textSize="18sp" />
+                <Switch android:id="@+id/switchExtraCheese" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="🧀 Extra Cheese" android:textColor="#E65100" android:textSize="18sp" />
+                <Switch android:id="@+id/switchBacon" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="🥓 Bacon" android:textColor="#E65100" android:textSize="18sp" />
+                <Switch android:id="@+id/switchPineapple" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="🍍 Pineapple" android:textColor="#E65100" android:textSize="18sp" />
+                <Switch android:id="@+id/switchJalapenos" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="🌶️ Jalapenos" android:textColor="#E65100" android:textSize="18sp" />
+                <Switch android:id="@+id/switchBellPeppers" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="🫑 Bell Peppers" android:textColor="#E65100" android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/bg_cartoon_button"
+        android:text="🛒 Review Order 🛒"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
